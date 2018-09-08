@@ -1,0 +1,6 @@
+Hi, hello how are you - First line
+I am fine - Second line
+what about you - Third line
+Can we meet tommorrow - fourth line
+No I am busy..! - fifth line
+Now the file has one more line! - Sixth line

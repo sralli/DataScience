@@ -1,0 +1,160 @@
+PYTHON FOR DATA SCIENCE INTRODUCTION
+------------------------------------
+
+
+1. Why learn Python?
+
+    Why learn Python for data analysis?
+    Python has gathered a lot of interest recently as a choice of language for data analysis. I had compared it against SAS & R some time back. Here are some reasons which go in favour of learning Python:
+
+    Open Source – free to install
+    Awesome online community
+    Very easy to learn
+    Can become a common language for data science and production of web based analytics products.
+    Needless to say, it still has few drawbacks too:
+
+    It is an interpreted language rather than compiled language – hence might take up more CPU time. However, given the savings in programmer time (due to ease of learning), it might still be a good choice.
+
+    Python 2.7 v/s 3.4
+    This is one of the most debated topics in Python. You will invariably cross paths with it, specially if you are a beginner. There is no right/wrong choice here. It totally depends on the situation and your need to use. I will try to give you some pointers to help you make an informed choice.
+
+    Why Python 2.7?
+    Awesome community support! This is something you’d need in your early days. Python 2 was released in late 2000 and has been in use for more than 15 years.
+    Plethora of third-party libraries! Though many libraries have provided 3.x support but still a large number of modules work only on 2.x versions. If you plan to use Python for specific applications like web-development with high reliance on external modules, you might be better off with 2.7.
+    Some of the features of 3.x versions have backward compatibility and can work with 2.7 version.
+
+
+    Why Python 3.4?
+    Cleaner and faster! Python developers have fixed some inherent glitches and minor drawbacks in order to set a stronger foundation for the future. These might not be very relevant initially, but will matter eventually.
+    It is the future! 2.7 is the last release for the 2.x family and eventually everyone has to shift to 3.x versions. Python 3 has released stable versions for past 5 years and will continue the same.
+    There is no clear winner but I suppose the bottom line is that you should focus on learning Python as a language. Shifting between versions should just be a matter of time. Stay tuned for a dedicated article on Python 2.x vs 3.x in the near future!
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2. How to install Python?
+
+There are 2 approaches to install Python:
+
+You can download Python directly from its project site and install individual components and libraries you want
+Alternately, you can download and install a package, which comes with pre-installed libraries. I would recommend downloading Anaconda. Another option could be Enthought Canopy Express.
+Second method provides a hassle free installation and hence I’ll recommend that to beginners. The imitation of this approach is you have to wait for the entire package to be upgraded, even if you are interested in the latest version of a single library. It should not matter until and unless, until and unless, you are doing cutting edge statistical research.
+
+ 
+
+Choosing a development environment
+
+Once you have installed Python, there are various options for choosing an environment. Here are the 3 most common options:
+
+Terminal / Shell based
+IDLE (default environment)
+iPython notebook – similar to markdown in R
+
+
+
+    a. Create an environment in jupyter notebook with python 2.7 or 3.6
+    b. Open terminal
+    c. Type "jupyter notebook" to open a notebook
+    d. print "Hello world" 
+        to check of the installation is correct
+  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3. Keywords and identifiers 
+
+    In Python, keywords are case sensitive.
+
+    There are 33 keywords in Python 3.3. This number can vary slightly in course of time.
+
+    All the keywords except True, False and None are in lowercase and they must be written as it is. The list of all the keywords are given below.
+
+    False	class	finally	is	return
+    None	continue	for	lambda	try
+    True	def	from	nonlocal	while
+    and	del	global	not	with
+    as	elif	if	or	yield
+    assert	else	import	pass	 
+    break	except	in	raise
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+4. comments, indentation and statements
+
+comments
+
+Multi-line statement with \
+
+a = 1 + 2 + 3 + \
+    4 + 5 + 6 + \
+    7 + 8 + 9
+
+a = (1 + 2 + 3 +
+    4 + 5 + 6 +
+    7 + 8 + 9)
+    
+a = 1; b = 2; c = 3
+
+indentation
+
+4 Spaces are preferred over tabs
+
+if True:
+    print('Hello')
+    a = 5
+
+if True: print('Hello'); a = 5
+
+both are valid and do the same thing. But the former style is clearer.
+
+Incorrect indentation will result into IndentationError.
+
+statements
+
+print(int.__doc__)
+
+
+Comments
+
+Single line comments #
+Multi-line comments ''' ''' or  """ """
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+5. Standard Input and Output
+
+Python Output Using print() function
+
+print('This sentence is output to the screen')
+# Output: This sentence is output to the screen
+
+a = 5
+
+print('The value of a is', a)
+# Output: The value of a is 5
+
+x = 5; y = 10
+print('The value of x is {} and y is {}'.format(x,y))
+print('Value is %d %d '%(x,y))
+print('Hello {name}, {greeting}'.format(greeting = 'Goodmorning', name = 'John'))
+
+%s for str, %d for int, %f for float etc
+
+The value of x is 5 and y is 10
+
+Input
+
+To allow flexibility we might want to take the input from the user. In Python, we have the input() function to allow this. The syntax for input() is
+
+num = input('Enter a number: ')
+print num
+
+
+eval('2+3')
+
+print x is y
+x += 1
+
+
+
